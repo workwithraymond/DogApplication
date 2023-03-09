@@ -1,14 +1,16 @@
 html {
-  border: 2px solid red;
+  
   font-size: 2rem;
   font-family: 'Franklin Gothic light', 'Arial Narrow', Arial, sans-serif;
   background: linear-gradient(lightyellow, orange);
+  height: 100vh;
+  
 }
 
 header {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: center;
-  border: 2px solid green;
+  
 }
 select {
   font-size: 1.5rem;
@@ -16,13 +18,15 @@ select {
 .section-container {
   display: flex;
   flex-direction: row;
-  border: 2px solid blue;
+  
   padding-left: 10vw;
   padding-right: 10vw;
+  
+  
 }
 .column {
   flex: 1;
-  border: 2px solid green;
+  
 }
 
 img {
