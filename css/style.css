@@ -1,12 +1,25 @@
-/* Box Model Hack */
-*{
-  box-sizing: border-box;
+html {
+  border: 2px solid red;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic light', 'Arial Narrow', Arial, sans-serif;
+  background: linear-gradient(lightyellow, orange);
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-img{
-  display: block;
-  margin: 0 auto;
+header {
+  margin-bottom: 30px;
+  text-align: center;
+  border: 2px solid green;
+}
+select {
+  font-size: 1.5rem;
+}
+.section-container {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid blue;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.column {
+  border: 2px solid green;
 }
