@@ -12,7 +12,7 @@ fetch(BREEDS_URL)
     const breedsObject = data.message;//Turn the message into an object
     const breedsArray = Object.keys(breedsObject) //Turn the object into an array
      //we need to loop over our array to return each option and create element for html 
-     for(let i=0; i < breedsArray.length; i++) {
+     for(let i = 0; i < breedsArray.length; i++) {
     const option = document.createElement('option') //this is creating <option></option>
     option.value = breedsArray[i] //setting the value for <option value = 'breed'>
     option.innerText = breedsArray[i] //<option value ='breed'>breed</option(we are adding the breed inside the tag)
@@ -22,9 +22,23 @@ fetch(BREEDS_URL)
   })
 
   select.addEventListener('change', event => {
-    console.log(event)
+   
     let url = `https://dog.ceo/api/breed/${event.target.value}/images/random`
+  getDoggoImg(url)
   })
+
+  const img = document.querySelector('.dog-img')
+
+  const getDoggoImg = url => {
+    fetch(url) //going to the API url above
+      .then(res => {
+        return res.json(); //get JSON message back
+      })
+      .then(data => {
+        img.src = data.message //extract message from JSON and attach to img tag as new source
+        
+      })
+  }
 
 
 
