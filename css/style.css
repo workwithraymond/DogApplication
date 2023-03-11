@@ -2,7 +2,7 @@ html {
   
   font-size: 2rem;
   font-family: 'Franklin Gothic light', 'Arial Narrow', Arial, sans-serif;
-  background: linear-gradient(lightyellow, orange);
+  background: linear-gradient(lightyellow, rgb(22, 68, 169));
   height: 100vh;
   
 }
